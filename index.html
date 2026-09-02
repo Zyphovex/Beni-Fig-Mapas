@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mapas</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0b0d;
+            color: white;
+        }
+
+        /* BARRA */
+
+        header {
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 7%;
+            background: rgba(12, 12, 14, 0.92);
+            border-bottom: 1px solid #222;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #7c7cff;
+        }
+
+        nav {
+            color: #888;
+            font-size: 14px;
+        }
+
+        /* PORTADA */
+
+        .hero {
+            padding: 90px 7% 70px;
+            text-align: center;
+            background:
+                radial-gradient(circle at top, rgba(124,124,255,0.12), transparent 45%);
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 7vw, 75px);
+            letter-spacing: 3px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: auto;
+            color: #999;
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        /* MAPAS */
+
+        .maps {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 7% 100px;
+        }
+
+        .titulo-seccion {
+            margin-bottom: 30px;
+        }
+
+        .titulo-seccion h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .titulo-seccion p {
+            color: #666;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* TARJETA */
+
+        .mapa {
+            background: #151518;
+            border: 1px solid #252529;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: 0.25s ease;
+        }
+
+        .mapa:hover {
+            transform: translateY(-6px);
+            border-color: #4444aa;
+            box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+        }
+
+        .mapa img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .mapa-contenido {
+            padding: 23px;
+        }
+
+        .mapa-contenido h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .mapa-contenido p {
+            color: #999;
+            line-height: 1.6;
+            font-size: 15px;
+            margin-bottom: 22px;
+        }
+
+        .boton {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            padding: 13px;
+            border-radius: 9px;
+            background: #7c7cff;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .boton:hover {
+            background: #9292ff;
+        }
+
+        /* PIE */
+
+        footer {
+            padding: 35px;
+            text-align: center;
+            color: #555;
+            border-top: 1px solid #1d1d20;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <span>BF</span> MAPS
+        </div>
+
+        <nav>
+            MAPAS
+        </nav>
+
+    </header>
+
+
+    <section class="hero">
+
+        <h1>MAPAS</h1>
+
+        <p>
+            Explorá y descargá mapas creados para tus juegos.
+            Elegí uno para ver su información y descargarlo.
+        </p>
+
+    </section>
+
+
+    <main class="maps">
+
+        <div class="titulo-seccion">
+
+            <h2>Todos los mapas</h2>
+
+            <p>
+                Seleccioná un mapa para descargarlo.
+            </p>
+
+        </div>
+
+
+        <div class="grid">
+
+
+            <!-- MAPA: BACKROOMS -->
+
+            <article class="mapa">
+
+                <img src="BACKROOMS.png" alt="BACKROOMS">
+
+                <div class="mapa-contenido">
+
+                    <h3>BACKROOMS</h3>
+
+                    <!-- EDITÁ ESTA DESCRIPCIÓN -->
+
+                    <p>
+                        Descripción del mapa.
+                        Podés escribir acá toda la información
+                        que quieras mostrar.
+                    </p>
+
+                    <!-- ARCHIVO DE DESCARGA -->
+
+                    <a class="boton"
+                       href="BACKROOMS.zip"
+                       download>
+
+                        Descargar
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!--
+            PARA AGREGAR OTRO MAPA:
+
+            Copiá desde <article class="mapa">
+            hasta </article> y cambiá:
+
+            imagen
+            nombre
+            descripción
+            archivo de descarga
+            -->
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        © 2026 BlockForge
+
+    </footer>
+
+</body>
+</html>

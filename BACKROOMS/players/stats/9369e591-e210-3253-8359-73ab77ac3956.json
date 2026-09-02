@@ -1,0 +1,56 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:oak_trapdoor": 4,
+      "minecraft:polished_deepslate": 533,
+      "minecraft:verdant_froglight": 3,
+      "minecraft:repeating_command_block": 4,
+      "minecraft:oak_sign": 25,
+      "minecraft:glass": 15,
+      "minecraft:ochre_froglight": 4,
+      "minecraft:stone_bricks": 5,
+      "minecraft:lantern": 1,
+      "minecraft:command_block": 5,
+      "minecraft:stripped_warped_hyphae": 98,
+      "minecraft:cut_sandstone": 26,
+      "minecraft:pearlescent_froglight": 3,
+      "minecraft:polished_deepslate_stairs": 15,
+      "minecraft:yellow_terracotta": 121,
+      "minecraft:cobweb": 82,
+      "minecraft:oak_slab": 17,
+      "minecraft:orange_terracotta": 83,
+      "minecraft:oak_log": 13,
+      "minecraft:stone": 8,
+      "minecraft:smooth_sandstone": 5,
+      "minecraft:stripped_crimson_hyphae": 31,
+      "minecraft:deepslate_tile_stairs": 3,
+      "minecraft:chest": 2,
+      "minecraft:deepslate_tiles": 7,
+      "minecraft:oak_pressure_plate": 2,
+      "minecraft:oak_planks": 47
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 112618,
+      "minecraft:walk_one_cm": 123047,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 112618,
+      "minecraft:jump": 221,
+      "minecraft:time_since_death": 112618,
+      "minecraft:drop": 1,
+      "minecraft:sprint_one_cm": 79567,
+      "minecraft:open_chest": 8,
+      "minecraft:total_world_time": 133028,
+      "minecraft:fly_one_cm": 481517,
+      "minecraft:crouch_one_cm": 2736,
+      "minecraft:sneak_time": 2181
+    },
+    "minecraft:picked_up": {
+      "minecraft:polished_deepslate_stairs": 1,
+      "minecraft:oak_sign": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:polished_deepslate_stairs": 1
+    }
+  },
+  "DataVersion": 4903
+}
